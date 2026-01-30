@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juguetes para Perros | Diversión y Estimulación</title>
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+    body{background:#f9fafb;color:#1f2933;line-height:1.6}
+
+    header{
+      background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+      url('https://images.unsplash.com/photo-1601758064226-0c3f47b3f3b3?auto=format&fit=crop&w=1400&q=80');
+      background-size:cover;
+      background-position:center;
+      padding:100px 20px;
+      text-align:center;
+      color:#fff;
+    }
+
+    h1{font-size:40px;margin-bottom:15px}
+    p{font-size:18px;margin-bottom:25px}
+
+    .cta{
+      background:#25d366;
+      color:#fff;
+      padding:16px 40px;
+      border-radius:14px;
+      font-size:20px;
+      font-weight:bold;
+      text-decoration:none;
+    }
+
+    section{padding:70px 20px}
+    .container{max-width:1200px;margin:auto}
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
+    }
+
+    .product-card{
+      background:#fff;
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:0 10px 25px rgba(0,0,0,.08);
+    }
+
+    img,video{width:100%;display:block}
+
+    .content{padding:25px}
+    .content h3{margin-bottom:10px}
+    .content p{color:#4b5563;margin-bottom:15px}
+
+    .price{
+      font-size:22px;
+      color:#16a34a;
+      font-weight:bold;
+      margin-bottom:15px;
+    }
+
+    .whatsapp-float{
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      background:#25d366;
+      color:#fff;
+      width:60px;
+      height:60px;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:32px;
+      text-decoration:none;
+      box-shadow:0 10px 25px rgba(0,0,0,.3);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Juguetes para Perros 🧸</h1>
+  <p>Diversión, estimulación mental y menos estrés para tu peludo</p>
+  <a href="https://wa.me/573136299375" class="cta">Comprar por WhatsApp</a>
+</header>
+
+<section>
+  <div class="container grid">
+
+    <!-- JUGUETE 1 -->
+    <div class="product-card">
+      <img src="juguete1.jpg" alt="Juguete mordedor">
+      <div class="content">
+        <h3>Mordedor Resistente</h3>
+        <p>Ideal para perros que muerden fuerte. Ayuda a reducir ansiedad.</p>
+        <div class="price">$39.000 COP</div>
+        <a href="https://wa.me/573136299375" class="cta">Comprar este juguete</a>
+      </div>
+    </div>
+
+    <!-- JUGUETE 2 -->
+    <div class="product-card">
+      <video src="juguete2.mp4" controls muted></video>
+      <div class="content">
+        <h3>Pelota Interactiva</h3>
+        <p>Estimula el juego activo y mejora la concentración.</p>
+        <div class="price">$45.000 COP</div>
+        <a href="https://wa.me/573136299375" class="cta">Comprar este juguete</a>
+      </div>
+    </div>
+
+    <!-- JUGUETE 3 -->
+    <div class="product-card">
+      <img src="juguete3.jpg" alt="Juguete didáctico">
+      <div class="content">
+        <h3>Juguete Didáctico</h3>
+        <p>Perfecto para estimulación mental y evitar el aburrimiento.</p>
+        <div class="price">$49.000 COP</div>
+        <a href="https://wa.me/573136299375" class="cta">Comprar este juguete</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<a href="https://wa.me/573136299375" class="whatsapp-float">☎</a>
+
+</body>
+</html>
