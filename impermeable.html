@@ -30,13 +30,14 @@
       font-size:20px;
       text-decoration:none;
       font-weight:bold;
+      display:inline-block;
     }
 
     section{padding:70px 20px}
-    .container{max-width:1100px;margin:auto}
+    .container{max-width:1200px;margin:auto}
     .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}
 
-    video{width:100%;border-radius:18px}
+    img{width:100%;border-radius:18px}
 
     .box{
       background:#fff;
@@ -63,10 +64,13 @@
       justify-content:center;
       font-size:32px;
       text-decoration:none;
+      box-shadow:0 10px 25px rgba(0,0,0,.3);
     }
   </style>
 </head>
 <body>
+
+<!-- MENÚ -->
 <nav style="margin:20px;text-align:center">
   <select onchange="location = this.value"
     style="padding:12px 16px;border-radius:10px;font-size:16px;border:none;max-width:320px">
@@ -88,20 +92,30 @@
 <section>
   <div class="container grid">
 
-    <video src="video2.mp4" controls muted></video>
-
+    <!-- IMAGEN 1 -->
     <div class="box">
-      <h2>Beneficios del impermeable</h2>
-      <ul>
-        <li>✔ Protege de lluvia y humedad</li>
-        <li>✔ Material liviano e impermeable</li>
-        <li>✔ Ideal para paseos en días lluviosos</li>
-        <li>✔ Fácil de limpiar</li>
-      </ul>
-
+      <img src="https://raw.githubusercontent.com/Orlyk2/index2/main/traje%201.jpg" alt="Impermeable para perro contra la lluvia">
+      <h2 style="margin-top:15px">Protección total contra la lluvia</h2>
+      <p>
+        Impermeable diseñado para mantener a tu perro seco durante paseos bajo la lluvia.
+        Material resistente al agua que protege el cuerpo completo sin incomodar.
+      </p>
       <div class="price">$89.000 COP</div>
+      <a href="https://wa.me/573136299375?text=Hola,%20quiero%20el%20impermeable%20para%20perros" class="cta">
+        Comprar ahora
+      </a>
+    </div>
 
-      <a href="https://wa.me/573136299375" class="cta">
+    <!-- IMAGEN 2 -->
+    <div class="box">
+      <img src="https://raw.githubusercontent.com/Orlyk2/index2/main/traje%202.jpg" alt="Impermeable para perro paseos lluviosos">
+      <h2 style="margin-top:15px">Ideal para paseos en días lluviosos</h2>
+      <p>
+        Evita que tu mascota se moje y se enferme.
+        Diseño cómodo, ligero y fácil de poner, perfecto para caminatas incluso con lluvia intensa.
+      </p>
+      <div class="price">$89.000 COP</div>
+      <a href="https://wa.me/573136299375?text=Hola,%20quiero%20el%20impermeable%20para%20perros" class="cta">
         Comprar ahora
       </a>
     </div>
@@ -113,4 +127,3 @@
 
 </body>
 </html>
-
