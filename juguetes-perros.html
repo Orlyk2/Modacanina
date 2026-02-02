@@ -6,11 +6,41 @@
   <title>Juguetes para Perros | Diversión y Estimulación</title>
 
   <style>
-    *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
-    body{background:#f9fafb;color:#1f2933;line-height:1.6}
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Segoe UI',sans-serif
+    }
 
+    body{
+      background:#f9fafb;
+      color:#1f2933;
+      line-height:1.6
+    }
+
+    /* ===== MENÚ ===== */
+    nav{
+      background:#ffffff;
+      padding:20px;
+      text-align:center;
+      box-shadow:0 4px 10px rgba(0,0,0,.05)
+    }
+
+    nav select{
+      padding:12px 16px;
+      border-radius:10px;
+      font-size:16px;
+      border:1px solid #ddd;
+      max-width:320px;
+      width:100%;
+      cursor:pointer
+    }
+
+    /* ===== HEADER ===== */
     header{
-      background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+      background:
+      linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
       url('https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg');
       background-size:cover;
       background-position:center;
@@ -19,26 +49,41 @@
       color:#fff;
     }
 
-    h1{font-size:40px;margin-bottom:15px}
-    p{font-size:18px;margin-bottom:25px}
+    h1{
+      font-size:40px;
+      margin-bottom:15px
+    }
+
+    header p{
+      font-size:18px;
+      margin-bottom:25px
+    }
 
     .cta{
       background:#25d366;
       color:#fff;
       padding:16px 40px;
       border-radius:14px;
-      font-size:20px;
+      font-size:18px;
       font-weight:bold;
       text-decoration:none;
+      display:inline-block
     }
 
-    section{padding:70px 20px}
-    .container{max-width:1200px;margin:auto}
+    /* ===== SECCIÓN PRODUCTOS ===== */
+    section{
+      padding:70px 20px
+    }
+
+    .container{
+      max-width:1200px;
+      margin:auto
+    }
 
     .grid{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-      gap:30px;
+      gap:30px
     }
 
     .product-card{
@@ -46,21 +91,40 @@
       border-radius:18px;
       overflow:hidden;
       box-shadow:0 10px 25px rgba(0,0,0,.08);
+      transition:transform .3s
     }
 
-    img,video{width:100%;display:block}
+    .product-card:hover{
+      transform:translateY(-5px)
+    }
 
-    .content{padding:25px}
-    .content h3{margin-bottom:10px}
-    .content p{color:#4b5563;margin-bottom:15px}
+    img{
+      width:100%;
+      display:block
+    }
+
+    .content{
+      padding:25px
+    }
+
+    .content h3{
+      margin-bottom:10px;
+      font-size:22px
+    }
+
+    .content p{
+      color:#4b5563;
+      margin-bottom:15px
+    }
 
     .price{
       font-size:22px;
       color:#16a34a;
       font-weight:bold;
-      margin-bottom:15px;
+      margin-bottom:15px
     }
 
+    /* ===== WHATSAPP FLOTANTE ===== */
     .whatsapp-float{
       position:fixed;
       bottom:20px;
@@ -73,16 +137,19 @@
       display:flex;
       align-items:center;
       justify-content:center;
-      font-size:32px;
+      font-size:30px;
       text-decoration:none;
       box-shadow:0 10px 25px rgba(0,0,0,.3);
+      z-index:100
     }
   </style>
 </head>
+
 <body>
-<nav style="margin:20px;text-align:center">
-  <select onchange="location = this.value"
-    style="padding:12px 16px;border-radius:10px;font-size:16px;border:none;max-width:320px">
+
+<!-- ===== MENÚ ===== -->
+<nav>
+  <select onchange="location=this.value">
     <option value="#">🏠 Navegar</option>
     <option value="index.html">Inicio</option>
     <option value="chaleco-termico.html">Chaleco Térmico</option>
@@ -92,54 +159,69 @@
   </select>
 </nav>
 
+<!-- ===== HEADER ===== -->
 <header>
   <h1>Juguetes para Perros 🧸</h1>
-  <p>Diversión, estimulación mental y menos estrés para tu peludo</p>
+  <p>Diversión, estimulación mental y bienestar para tu mejor amigo</p>
   <a href="https://wa.me/573136299375" class="cta">Comprar por WhatsApp</a>
 </header>
 
+<!-- ===== PRODUCTOS ===== -->
 <section>
   <div class="container grid">
 
     <!-- JUGUETE 1 -->
     <div class="product-card">
-      <img src="juguete1.jpg" alt="Juguete mordedor">
+      <img src="https://raw.githubusercontent.com/Orlyk2/index2/d0e5355c6e0a59fb5a903be4db76e2b1061032b0/2222.jpg" alt="Mordedor resistente para perros">
       <div class="content">
-        <h3>Mordedor Resistente</h3>
-        <p>Ideal para perros que muerden fuerte. Ayuda a reducir ansiedad.</p>
-        <div class="price">$39.000 COP</div>
-        <a href="https://wa.me/573136299375" class="cta">Comprar este juguete</a>
+        <h3>Mordedor Extra Resistente</h3>
+        <p>
+          Juguete ideal para perros con mucha energía.
+          Ayuda a reducir el estrés, fortalece la mandíbula
+          y mantiene a tu mascota entretenida por más tiempo.
+        </p>
+        <div class="price">$19.000 COP</div>
+        <a href="https://wa.me/573136299375?text=Hola,+quiero+el+mordedor+extra+resistente" class="cta">
+          Comprar ahora
+        </a>
       </div>
     </div>
 
     <!-- JUGUETE 2 -->
     <div class="product-card">
-      <video src="juguete2.mp4" controls muted></video>
+      <img src="https://raw.githubusercontent.com/Orlyk2/index2/d0e5355c6e0a59fb5a903be4db76e2b1061032b0/ss.jpg" alt="Juguete interactivo con sonido">
       <div class="content">
-        <h3>Pelota Interactiva</h3>
-        <p>Estimula el juego activo y mejora la concentración.</p>
-        <div class="price">$45.000 COP</div>
-        <a href="https://wa.me/573136299375" class="cta">Comprar este juguete</a>
+        <h3>Combo Sorpresa para tu canino</h3>
+        <p>
+         Encuentra productos sorprendentes hasta 5 productos
+        </p>
+        <div class="price">$38.0000 COP</div>
+        <a href="https://wa.me/573136299375?text=Hola,+quiero+el+juguete+interactivo+sonoro" class="cta">
+          Comprar ahora
+        </a>
       </div>
     </div>
 
     <!-- JUGUETE 3 -->
     <div class="product-card">
-      <img src="juguete3.jpg" alt="Juguete didáctico">
+      <img src="https://raw.githubusercontent.com/Orlyk2/index2/d0e5355c6e0a59fb5a903be4db76e2b1061032b0/rr.jpg" alt="Juguete didáctico para perros">
       <div class="content">
-        <h3>Juguete Didáctico</h3>
-        <p>Perfecto para estimulación mental y evitar el aburrimiento.</p>
+        <h3>Pelotas Masajeadoras Spin</h3>
+        <p>
+         Pelota spin Maciza con astas Ayuda a masajear encias y limpiar dientes
+        </p>
         <div class="price">$49.000 COP</div>
-        <a href="https://wa.me/573136299375" class="cta">Comprar este juguete</a>
+        <a href="https://wa.me/573136299375?text=Hola,+quiero+el+juguete+didactico+inteligente" class="cta">
+          Comprar ahora
+        </a>
       </div>
     </div>
 
   </div>
 </section>
 
-<a href="https://wa.me/573136299375" class="whatsapp-float">☎</a>
+<!-- ===== BOTÓN WHATSAPP ===== -->
+<a href="https://wa.me/573136299375" class="whatsapp-float">💬</a>
 
 </body>
 </html>
-
-
